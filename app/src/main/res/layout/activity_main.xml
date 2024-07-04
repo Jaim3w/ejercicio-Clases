@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="407dp"
+        android:layout_height="728dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnIngresarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1189dp"
+                android:text="Ingresar Datos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.939"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.737" />
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="287dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="21dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="287dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginBottom="60dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtEdad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtProfesion"
+                android:layout_width="293dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="96dp"
+                android:layout_marginBottom="81dp"
+                android:ems="10"
+                android:hint="Profesion"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtNumeroTarjeta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+            <EditText
+                android:id="@+id/txtNumeroTarjeta"
+                android:layout_width="293dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="59dp"
+                android:ems="10"
+                android:hint="Numero de tarjeta de credito"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtTipoSangre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.114"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProfesion" />
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="184dp"
+                android:layout_marginBottom="60dp"
+                android:ems="10"
+                android:hint="Direccion"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtEstadoCivil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipoSangre" />
+
+            <EditText
+                android:id="@+id/txtEstadoCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="184dp"
+                android:ems="10"
+                android:hint="Estado Civil"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtDireccion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipoSangre" />
+
+            <EditText
+                android:id="@+id/txtTipoSangre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="179dp"
+                android:layout_marginBottom="66dp"
+                android:ems="10"
+                android:hint="Tipo de sangre"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtDireccion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNumeroTarjeta"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="184dp"
+                android:ems="10"
+                android:hint="telefono"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEstadoCivil" />
+
+            <EditText
+                android:id="@+id/txtNacionalidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:ems="10"
+                android:hint="Nacionalidad"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/txtAltura"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+            <EditText
+                android:id="@+id/txtDui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Dui"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="291dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="34dp"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/txtProfesion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.163"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <EditText
+                android:id="@+id/txtPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Peso"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/txtNacionalidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+            <EditText
+                android:id="@+id/txtAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="192dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Altura"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/txtDui"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNacionalidad" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
